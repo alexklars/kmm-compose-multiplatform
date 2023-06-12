@@ -5,8 +5,10 @@ A simple app for exploring Compose Multiplatform IOS. Application template was t
 
 It renders Audio player UI:
 
-<img src="readme_assets/android_expanded_player.png"  width="180" height="400">
-<img src="readme_assets/ios_expanded_player.png"  width="184" height="400">
+<p float="left">
+   <img src="readme_assets/android_expanded_player.png"  width="180" height="400">
+   <img src="readme_assets/ios_expanded_player.png"  width="184" height="400">
+</p>
 
 ## Set up the environment
 
