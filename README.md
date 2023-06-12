@@ -3,6 +3,11 @@
 A simple app for exploring Compose Multiplatform IOS. Application template was taken from [here
 ](https://github.com/JetBrains/compose-multiplatform-ios-android-template).
 
+It renders Audio player UI:
+
+<img src="readme_assets/android_expanded_player.png"  width="180" height="400">
+<img src="readme_assets/ios_expanded_player.png"  width="184" height="400">
+
 ## Set up the environment
 
 > **Warning**
