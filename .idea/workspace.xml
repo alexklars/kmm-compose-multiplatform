@@ -1,27 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db2c9375-001b-40db-9246-3f6d23189707" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/data/PlayerUIData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/data/model/PlayerUI.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/icon/Icons.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/ui/component/AlbumArtComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/ui/component/AudioPlayerExpandedComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/ui/component/IconButtonComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/ui/component/SliderComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/utils/DimensionUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/androidMain/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/androidApp/src/androidMain/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/cocoapods/framework/shared.framework/Headers/placeholder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/cocoapods/framework/shared.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/cocoapods/framework/shared.framework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/cocoapods/framework/shared.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/cocoapods/framework/shared.framework/Modules/module.modulemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/cocoapods/framework/shared.framework/shared" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/cocoapods/framework/shared.framework/shared" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/App.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/Aliaksei_Maiseyenkau/.android/avd/Pixel_4_API_Tiramisu_2.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R58N40650XP]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MyApplication" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KotlinMultiplatform" KONAN_HOME="$USER_HOME$/.konan/kotlin-native-prebuilt-macos-x86_64-1.8.20">
+    <executable TARGET="ios_arm64" TARGET_NAME="iosArm64" EXECUTABLE_NAME="test" PROJECT_PREFIX=":shared:" IS_TEST="true">
+      <variant NAME="Debug" GRADLE_TASK=":shared:linkDebugTestIosArm64" FILE="$PROJECT_DIR$/shared/build/bin/iosArm64/debugTest/test.kexe" WORKING_DIR="" PROGRAM_PARAMS="">
+        <envs />
+      </variant>
+    </executable>
     <executable TARGET="ios_simulator_arm64" TARGET_NAME="iosSimulatorArm64" EXECUTABLE_NAME="test" PROJECT_PREFIX=":shared:" IS_TEST="true">
       <variant NAME="Debug" GRADLE_TASK=":shared:linkDebugTestIosSimulatorArm64" FILE="$PROJECT_DIR$/shared/build/bin/iosSimulatorArm64/debugTest/test.kexe" WORKING_DIR="" PROGRAM_PARAMS="">
         <envs />
@@ -29,11 +71,6 @@
     </executable>
     <executable TARGET="ios_x64" TARGET_NAME="iosX64" EXECUTABLE_NAME="test" PROJECT_PREFIX=":shared:" IS_TEST="true">
       <variant NAME="Debug" GRADLE_TASK=":shared:linkDebugTestIosX64" FILE="$PROJECT_DIR$/shared/build/bin/iosX64/debugTest/test.kexe" WORKING_DIR="" PROGRAM_PARAMS="">
-        <envs />
-      </variant>
-    </executable>
-    <executable TARGET="ios_arm64" TARGET_NAME="iosArm64" EXECUTABLE_NAME="test" PROJECT_PREFIX=":shared:" IS_TEST="true">
-      <variant NAME="Debug" GRADLE_TASK=":shared:linkDebugTestIosArm64" FILE="$PROJECT_DIR$/shared/build/bin/iosArm64/debugTest/test.kexe" WORKING_DIR="" PROGRAM_PARAMS="">
         <envs />
       </variant>
     </executable>
@@ -52,12 +89,34 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "ScreenshotViewer.SavePath": "/Users/Aliaksei_Maiseyenkau/Downloads",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/Aliaksei_Maiseyenkau/Projects/KMM/kmm-compose-multiplatform",
+    "last_opened_file_path": "/Users/Aliaksei_Maiseyenkau/Projects/KMM/kmm-compose-multiplatform/shared/src/commonMain/kotlin",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shared/src/commonMain/kotlin" />
+      <recent name="$PROJECT_DIR$/shared/src/commonMain/resources" />
+      <recent name="$PROJECT_DIR$/shared/src/commonMain/kotlin/ui/component" />
+      <recent name="$PROJECT_DIR$/shared/src/commonMain/kotlin/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shared/src/commonMain/kotlin/ui/component" />
+      <recent name="$PROJECT_DIR$/shared/src/commonMain/resources" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="data.icon" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="data" />
+      <recent name="" />
+      <recent name="data.model" />
+    </key>
+  </component>
   <component name="RunManager" selected="Android App.androidApp">
     <configuration name="androidApp" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="MyApplication.androidApp.main" />
@@ -130,6 +189,41 @@
       <option name="presentableId" value="Default" />
       <updated>1686509292407</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1686510604274</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686510604274</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create kmm project" />
+    <option name="LAST_COMMIT_MESSAGE" value="create kmm project" />
   </component>
 </project>
